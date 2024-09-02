@@ -47,6 +47,22 @@ set_property -dict [list \
   CONFIG.pl_link_cap_max_link_width {X8} \
 ] [get_ips qdma_0]
 ```
+### Install xilinx vivado cable drivers
+
+*To install the Windows driver, run the following commands in an Administrator command prompt:
+
+```bash
+cd %VIVADO_INSTALL_DIR%\data\xicom\cable_drivers\nt64
+install_drivers_wrapper.bat %log_dir%
+```
+
+*To install the Linux driver, enter the following commands as root:
+
+```bash
+cd ${vivado_install_dir}/data/xicom/cable_drivers/lin64/install_script/install_drivers/
+./install_drivers
+```
+
 ### Creating xdc file for your board from vivado example project
 
 Choose qdma ip block in your project:
