@@ -49,14 +49,14 @@ set_property -dict [list \
 ```
 ### Install xilinx vivado cable drivers
 
-*To install the Windows driver, run the following commands in an Administrator command prompt:
+To install the Windows driver, run the following commands in an Administrator command prompt:
 
 ```bash
 cd %VIVADO_INSTALL_DIR%\data\xicom\cable_drivers\nt64
 install_drivers_wrapper.bat %log_dir%
 ```
 
-*To install the Linux driver, enter the following commands as root:
+To install the Linux driver, enter the following commands as root:
 
 ```bash
 cd ${vivado_install_dir}/data/xicom/cable_drivers/lin64/install_script/install_drivers/
