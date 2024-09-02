@@ -19,7 +19,7 @@ Here are two projects:
 Execute Vivado in batch mode to generate Vivado project in this folder:
 
 ```bash
-vivado -mode batch -source fpga_va_qdma_kcu116.tcl
+vivado -mode batch -source fpga_va_qdma_vcu128.tcl
 ```
 
 To create project in different directory, execute following:
@@ -27,7 +27,7 @@ To create project in different directory, execute following:
 ```bash
 mkdir -p projects
 cd projects
-vivado -mode batch -source <path_to_this_repository>/rtl/fpga_va_qdma_kcu116.tcl -tclargs [ --origin_dir "<path_to_this_repository>/rtl/" ]
+vivado -mode batch -source <path_to_this_repository>/rtl/fpga_va_qdma_vcu128.tcl -tclargs [ --origin_dir "<path_to_this_repository>/rtl/" ]
 ```
 
 ### Manual
