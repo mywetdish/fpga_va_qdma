@@ -67,7 +67,12 @@ Network devices using DPDK-compatible driver
 ============================================
 0000:01:00.0 'Device 9038' drv=igb_uio unused=
 ```
-5. Run provided testbench using any SystemVerilog and DPI-compatible simulator (VCS, Xcelium, Questa):
+
+5. Make change in modelsim.ini file:
+
+Replace <questasim-path>/modelsim.ini by <path_to_this_repository>/example/modelsim.ini
+
+6. Run provided testbench using any SystemVerilog and DPI-compatible simulator (VCS, Xcelium, Questa):
 
 ```bash
 # Questa example
