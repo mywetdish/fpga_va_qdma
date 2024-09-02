@@ -101,23 +101,23 @@ Enable hugepages in `/etc/default/grub`:
 
 ```bash
 # This is example cmdline, do not override your settings!
-GRUB_CMDLINE_LINUX="default_hugepagesz=1GB hugepagesz=1G hugepages=20"
+GRUB_CMDLINE_LINUX="default_hugepagesz=1GB hugepagesz=1G hugepages=4"
 ```
 
-This example provides 20 1 GB hugepages which are required to support 2048 queues, with descriptor ring 1024 entries and 4 KB descriptor buffer length. VA do not require this much memory since only two queues (RX/TX) are used. Numbers might be reduced if required.
+This example provides 4 1 GB hugepages instead of 20 1 GB. (You may expand it depending on your RAM)
 
 > (*Optional*) Enable IOMMU if needed (VFs are not used in VA by default):
 >
 > On an Intel platform, update `/etc/default/grub` file as below:
 > 
 > ```bash
-> GRUB_CMDLINE_LINUX="default_hugepagesz=1GB hugepagesz=1G hugepages=20 iommu=pt intel_iommu=on"
+> GRUB_CMDLINE_LINUX="default_hugepagesz=1GB hugepagesz=1G hugepages=4 iommu=pt intel_iommu=on"
 > ```
 > 
 > On an AMD platform, update `/etc/default/grub` file as below:
 > 
 > ```bash
-> GRUB_CMDLINE_LINUX="default_hugepagesz=1GB hugepagesz=1G hugepages=20 iommu=pt amd_iommu=on"
+> GRUB_CMDLINE_LINUX="default_hugepagesz=1GB hugepagesz=1G hugepages=4 iommu=pt amd_iommu=on"
 > ```
 
 Execute the following command to modify the `/boot/grub/grub.cfg` with the configuration set in the above steps and permanently add them to the kernel command line.
@@ -155,5 +155,5 @@ sudo make
 For further steps please refer to following manuals:
 
 * [VA RTL design](rtl/README.md)
-* [C API compilation](api/README.md)
+* [C API documentation](api/README.md)
 * [Example testbench](example/README.md)
