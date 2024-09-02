@@ -52,9 +52,11 @@ set_property -dict [list \
 Choose qdma ip block in your project:
 
 ![image](https://github.com/user-attachments/assets/40d3c99f-8df4-462c-b9e5-ec6fa9185fc7)
+
 Then select "Open IP Example Design"
 
 ![image](https://github.com/user-attachments/assets/af3e5883-9062-4637-b1ec-2fb6653c1449)
+
 Here it is! Copy xdc to your project
 
 ![image](https://github.com/user-attachments/assets/46e56707-c1fd-4568-955d-3d22f31c358a)
