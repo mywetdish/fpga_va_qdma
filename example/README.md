@@ -70,7 +70,7 @@ Network devices using DPDK-compatible driver
 
 5. Make change in modelsim.ini file:
 
-Replace <questa-path>/modelsim.ini by <path_to_this_repository>/example/modelsim.ini
+Replace `<questa-path>/modelsim.ini` by `<path_to_this_repository>/example/modelsim.ini`
 
 6. Run provided testbench using any SystemVerilog and DPI-compatible simulator (VCS, Xcelium, Questa):
 
