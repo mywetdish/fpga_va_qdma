@@ -50,13 +50,13 @@ git clone git://dpdk.org/dpdk-kmods
 Clone PMD driver (anywhere):
 
 ```bash
-git clone git@github.com:Xilinx/dma_ip_drivers.git <pmd_path>
+git clone https://github.com/Xilinx/dma_ip_drivers.git <pmd_path>
 ```
 
 Copy net driver from PMD to DPDK installation:
 
 ```bash
-cp -r <pmd_path>/drivers/net/qdma <dpdk_path>/drivers/net/
+cp -r <pmd_path>/QDMA/DPDK/drivers/net/qdma <dpdk_path>/drivers/net/
 ```
 
 (*Optional*) enable DPDK debug logs in `<dpdk_path>/config/rte_config.h` by adding:
