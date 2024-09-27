@@ -2,7 +2,7 @@
 
 ## Requirements
 
-* [AMD Kintex UltraScale+ FPGA KCU116 Evaluation Kit](https://www.xilinx.com/products/boards-and-kits/ek-u1-kcu116-g.html) or any other QDMA-compatible FPGA (project .tcl script should be edited in this case);
+* [AMD Virtex UltraScale+ FPGA VCU128 Evaluation Kit](https://www.xilinx.com/products/boards-and-kits/vcu128.html) or any other QDMA-compatible FPGA (project .tcl script should be edited in this case);
 * [Vivado Design Suite](https://www.xilinx.com/products/design-tools/vivado.html); current project was built and tested in `2023.1`
 
 ## RTL
